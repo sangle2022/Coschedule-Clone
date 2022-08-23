@@ -1,0 +1,20 @@
+*** Make folder in pages folder then start working ***
+*** Create Routes Side by Side for your page and check the pages by changing url to your specified routes
+#For Example
+-Pages
+ -Homepage
+ -Pricing
+ -products
+    -marketing
+    -calendar
+ -Calendar
+  -Home
+  -calendar 
+  -sideBar
+
+***utils folder 
+ -utils
+   -Navbar
+   -Footer
+   -sideBar
+   -localstorage files

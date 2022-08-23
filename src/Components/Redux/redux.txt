@@ -1,0 +1,2 @@
+***if you are using redux then add provider in index.js file and pass the Store
+***make changes if only needed

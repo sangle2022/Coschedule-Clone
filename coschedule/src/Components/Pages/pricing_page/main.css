@@ -1,0 +1,126 @@
+.heading1>img {
+    height: 60px;
+    margin-top: 30px;
+}
+
+.heading2>h1{
+    font-size: 36px;
+    max-width: 750px;
+    margin: 30px auto 10px
+}
+
+.flex{
+    height: 800px;
+    width: 1100px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex>div{
+    width: 350px;
+    height: 700px;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.plan-title{
+    font-weight: bold;
+    font-family: "MuseoSans-700",sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    color: #f37e5d;
+}
+.plan-name{
+    text-align: center;
+    color: #4b4b4b;
+    line-height: 130%;
+    letter-spacing: -0.3px;
+    text-transform: none;
+    font-weight: bolder;
+    font-family: "MuseoSans-700",sans-serif;
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+.box>p{
+    font-size: 13px;
+    line-height: 140%;
+    color: #787878;
+    font-family: "MuseoSans-300",sans-serif;
+    text-align: center;
+    margin: 0 0 10px;
+    padding:30px;
+    margin-top: -25px;
+}
+.box>h1{
+    font-weight: bold;
+    font-size:50px;
+    font-family: "MuseoSans-700",sans-serif;
+    letter-spacing: -0.3px;
+    text-transform: none;
+    color: #4b4b4b;
+    margin-top: -45px;
+}
+.box>h3{
+    font-family: "MuseoSans-700",sans-serif;
+    margin-top: -30px;
+}
+.box>button{
+    font-family: "MuseoSans-700",sans-serif;
+    color: white;
+    background-color: #f37e5d;
+    border: #f37e5d;
+}
+.box>ul{
+    font-family: "MuseoSans-300",sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    color: #474747;
+    list-style: none;
+}
+ul li:before {
+    content: '✓';
+    color: #f37e5d;
+  }
+.box>li{
+    font-size: 14px;
+    line-height: 150%;
+    font-family: "MuseoSans-300",sans-serif;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin-left: 10px;
+}
+
+.quote {
+    margin-top: 60px;
+}
+.quote>h3{
+    color: #787878;
+    font-family: "Merriweather",serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 170%;
+    margin-top: -20px;
+
+}
+.testimonial{
+    display: flex;
+    justify-content: center;
+}
+.testimonial>img{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 3px solid #e9e9e9;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px
+}
+.testimonial>p{
+    color: #787878;
+    font-family: "MuseoSans-300",sans-serif;
+    line-height: 170%;
+}

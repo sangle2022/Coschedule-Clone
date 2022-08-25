@@ -4,6 +4,7 @@
 
 
 
+import Footer from "../Pages/Footer";
 import Navbar from "../Pages/Navbar"
 // import Footer from "./Footer"
 // import Homepage from "./HomePage"
@@ -16,7 +17,7 @@ function Home() {
     
      <Navbar/>
       {/* <Homepage/> */}
-     {/* <Footer/> */} 
+      <Footer/> 
       
     
     </div>

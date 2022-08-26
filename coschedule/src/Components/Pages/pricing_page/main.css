@@ -1,3 +1,4 @@
+
 .heading1>img {
     height: 60px;
     margin-top: 30px;
@@ -15,19 +16,27 @@
     margin:auto;
     display: flex;
     flex-direction: row;
+    margin-top: 60px;
+}
+.img1{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-left: 81px;
+    margin-top: -48px;
 }
 
 .flex>div{
     width: 350px;
-    height: 700px;
+    height: 1043px;
     margin-left: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .plan-title{
     font-weight: bold;
-    font-family: "MuseoSans-700",sans-serif;
-    font-size: 12px;
+    font-family: sans-serif;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 60px;
@@ -40,19 +49,23 @@
     letter-spacing: -0.3px;
     text-transform: none;
     font-weight: bolder;
-    font-family: "MuseoSans-700",sans-serif;
+    font-family: sans-serif;
     font-size: 24px;
     margin: 0 0 15px;
+    margin-top: 10px
 }
 .box>p{
     font-size: 13px;
     line-height: 140%;
     color: #787878;
-    font-family: "MuseoSans-300",sans-serif;
+    font-weight: normal;
+    font-family: "MuseoSans-700",sans-serif;
     text-align: center;
     margin: 0 0 10px;
     padding:30px;
-    margin-top: -25px;
+    margin-top: 20px;
+    margin-left: -78px;
+    margin-bottom: -30px
 }
 .box>h1{
     font-weight: bold;
@@ -61,10 +74,10 @@
     letter-spacing: -0.3px;
     text-transform: none;
     color: #4b4b4b;
-    margin-top: -45px;
+    margin-top: 10px;
 }
 .box>h3{
-    font-family: "MuseoSans-700",sans-serif;
+    font-family: sans-serif;
     margin-top: -30px;
 }
 .box>button{
@@ -72,13 +85,27 @@
     color: white;
     background-color: #f37e5d;
     border: #f37e5d;
+    font-size: 17px;
+    height: 43px;
+    width: 231px;
 }
+
 .box>ul{
     font-family: "MuseoSans-300",sans-serif;
     font-size: 15px;
     line-height: 21px;
     color: #474747;
     list-style: none;
+    margin-top: -35px;
+    display: grid;
+    grid-row-gap: 10px;
+    row-gap: 10px;
+    padding-left: 30px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: left;
 }
 ul li:before {
     content: '✓';
@@ -91,6 +118,9 @@ ul li:before {
     display: list-item;
     text-align: -webkit-match-parent;
     margin-left: 10px;
+}
+.btn2{
+    margin-top: 200px;
 }
 
 .quote {
@@ -123,4 +153,25 @@ ul li:before {
     color: #787878;
     font-family: "MuseoSans-300",sans-serif;
     line-height: 170%;
+}
+.faq{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 27px;
+}
+.pricing-faq-wrapper{
+
+    height: 400px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: "MuseoSans-300",sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    color: #474747;
+    grid-gap: 40px;
+    gap: 40px;
+   
 }

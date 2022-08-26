@@ -29,3 +29,13 @@
   text-decoration: underline;
   cursor: pointer;
 }
+.fontGiven{
+  font-family: MuseoSans-500,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24.5px;
+    line-height: 40px;
+    color: #666666;;
+  margin: 10px 0;
+  text-rendering: optimizelegibility;
+}

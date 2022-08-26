@@ -1,27 +1,70 @@
-import { background, Box, Button, Heading, Image, Input, Stack, Text, VStack, Spacer, Flex } from '@chakra-ui/react'
-import React from 'react'
+import { background, Box, Button, Heading, Image, Input, Stack, Text, VStack, Spacer, Flex, useToast } from '@chakra-ui/react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
+import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import  HaveAllert  from './HaveAllert'
+
 import "./login.css"
 export default function Sidebar() {
 
     const [disable , setDisable]=useState(true)
     const [mail, setMail]=useState('')
     const [pass, setPass]=useState('')
-    const navigate=useNavigate()
+    const [info, setInfo]=useState('')
+    
+    const navigate = useNavigate();
+    const toast =useToast()
+   
+    const loginHandler = () => {
+       axios.get("https://rest-api-vaibhav-clone.herokuapp.com/posts").then((r)=>{
+        setInfo(r.data)
+       }).catch((e)=>{console.log(e)})
+
+    if(info){
+     console.log(info)
+    for(let i=0;i<info.length;i++)
+    {
+      
+      if(info[i].email===mail && info[i].password===pass){
+          
+      toast({
+            title: 'Sign In Successfully',
+            description: "Lets Plan Your Day",
+            status: 'success',
+            duration: 2000,
+            isClosable: true,
+            position:'top',
+          }) 
+      return ( setTimeout(() => {
+              navigate("/company")
+            }, 4000)
+          )  
+        }
+      }
+      return ( toast({
+        title: 'Oops ! Entered wrong credentials',
+        description: "Lets Try Again",
+        status: 'error',
+        duration: 2000,
+        isClosable: true,
+        position:'top'
+      })
+      )
+
+    }
+    };
 
     const handleSign=()=>{
         navigate("/signup")
     }
 
-
-
-
   return (
-    <VStack width="600px" height="105vh" backgroundColor="white" padding="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;" >
+    <VStack width="600px" height="105vh"  padding="20px" boxShadow="rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;" >
         <Box
            
             width="80%" height="100%">
+              {/* <HaveAllert /> */}
           
         <Image marginBottom="70px" width="220px"
         marginLeft="100px" marginTop="30px"
@@ -41,8 +84,11 @@ export default function Sidebar() {
          />
 
         <Button width="100%" marginTop="20px" color="white" backgroundColor="#d17760" 
-        _hover={{background:"#f37e5d"}} disabled={(mail.length >=5  && pass.length >=5?false:disable)}
+        _hover={{background:"#f37e5d"}} onClick={loginHandler} 
+        disabled={(mail.length >=5  && pass.length >=5?false:disable)}
         >Sign In</Button>
+        
+       
 
         <Text marginTop="10px" marginBottom="10px">OR</Text>
 

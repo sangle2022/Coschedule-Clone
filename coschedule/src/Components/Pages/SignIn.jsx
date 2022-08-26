@@ -8,7 +8,7 @@ const SignIn = () => {
     <div  >
     <HStack style={{display:"flex"}}>
     <Box><SideImage/></Box>
-    <Box height="100%"  zIndex="1"><Sidebar/></Box>
+    <Box bgColor="white" height="100%"  zIndex="1"><Sidebar/></Box>
     </HStack>   
        
        

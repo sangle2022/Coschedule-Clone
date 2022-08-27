@@ -32,7 +32,8 @@ import {
     FaFacebook,
     FaLinkedin,
   } from "react-icons/fa";
-=======
+
+  import{
    
     HStack,
     Icon
@@ -45,14 +46,7 @@ import {
   
   function Footer() {
 
-    // const navigate=useNavigate();
-  
-    return (
-      <Box>
-      <Box display={"flex"} width="100%">
-        <Box lineHeight="2rem" width="40%" textAlign={'left'} paddingTop="5rem" paddingLeft="11%">
 
-    
   
     return (
       <Box display={"flex"} width="100%">
@@ -65,7 +59,7 @@ import {
             <Text>Sign in</Text>
 
             <br/>
-            <HStack gap={"2rem"}>
+          
 
             <HStack>
 
@@ -146,7 +140,7 @@ import {
         
       </Box>
 
-
+</Box>
 
       
 
@@ -205,7 +199,7 @@ import {
       </Box>
       
     );
-  }
+}
   
   export default Footer;
   

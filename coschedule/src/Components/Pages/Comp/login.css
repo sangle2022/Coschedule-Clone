@@ -1,0 +1,41 @@
+
+.zoom-in-out-box {
+    padding: 0%;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 95vh;
+    background: #f50057;
+    animation: zoom-in-zoom-out 10s ease infinite;
+    z-index: -1;
+  }
+
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1.1, 1.1);
+    }
+    50% {
+      transform: scale(1.13, 1.13);
+    }
+    100% {
+      transform: scale(1.1, 1.1);
+    }
+  }
+.text_hover{
+  color: #7e7e7e;
+  font-size: 14px;
+}
+.text_hover:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.fontGiven{
+  font-family: MuseoSans-500,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24.5px;
+    line-height: 40px;
+    color: #666666;;
+  margin: 10px 0;
+  text-rendering: optimizelegibility;
+}

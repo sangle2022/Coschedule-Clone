@@ -22,7 +22,7 @@ export default function Sidebar() {
        }).catch((e)=>{console.log(e)})
 
     if(info){
-     console.log(info)
+    
     for(let i=0;i<info.length;i++)
     {
       
@@ -32,13 +32,13 @@ export default function Sidebar() {
             title: 'Sign In Successfully',
             description: "Lets Plan Your Day",
             status: 'success',
-            duration: 2000,
+            duration: 1000,
             isClosable: true,
             position:'top',
           }) 
       return ( setTimeout(() => {
               navigate("/company")
-            }, 4000)
+            }, 3000)
           )  
         }
       }
@@ -46,7 +46,7 @@ export default function Sidebar() {
         title: 'Oops ! Entered wrong credentials',
         description: "Lets Try Again",
         status: 'error',
-        duration: 2000,
+        duration: 1000,
         isClosable: true,
         position:'top'
       })
@@ -78,7 +78,7 @@ export default function Sidebar() {
         marginTop="10px"
         marginBottom="5px" marginLeft="8px">PASSWORD</Text>
         <Input variant='unstyled' border="2px solid #E6E6E6;" 
-        height="42px"
+        height="42px" type="password"
         placeholder='Password' backgroundColor="white" outline="black"  paddingLeft="10px"
         value={pass} onChange={(e)=>setPass(e.target.value)}
          />

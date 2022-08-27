@@ -43,7 +43,7 @@ const SignupForm = () => {
         title: 'Account Created Successfully',
         description: 'Youre being redirected to login page',
         status: 'success',
-        duration: 2000,
+        duration: 1000,
         isClosable: true,
         position:'top',
       }) 
@@ -104,7 +104,7 @@ const SignupForm = () => {
                <Text bgColor="white"  color="#7e7e7e" fontSize="12px" textAlign="left" marginBottom="2px"
                 marginLeft="8px">Password</Text>
 
-               <Input id='solo' type="email" variant='unstyled' border="2px solid #E6E6E6;" 
+               <Input id='solo' type="password" variant='unstyled' border="2px solid #E6E6E6;" 
                     height="42px" textAlign="center" value={state.password}
                     onChange={(e) =>
                       setState({ type: "password", payload: e.target.value })

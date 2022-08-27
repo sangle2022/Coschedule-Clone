@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Company from '../Pages/Company'
+
 import SignIn from '../Pages/SignIn'
 import SignUp from '../Pages/SignUp'
 
@@ -13,6 +14,7 @@ const MainRoutes = () => {
       <Route path='/login' element={<SignIn />} />
       <Route path='/signup' element={<SignUp />} /> 
       <Route path='/company' element={<Company/>} />
+     
     </Routes>
   )
 }

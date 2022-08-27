@@ -12,6 +12,7 @@ import {
     Heading,
     Spacer,
     Stack,
+
     
     
     Container,
@@ -31,24 +32,43 @@ import {
     FaFacebook,
     FaLinkedin,
   } from "react-icons/fa";
+=======
+   
+    HStack,
+    Icon
+    
+  } from "@chakra-ui/react";
+
 //   import {Search2Icon} from"@chakra-ui/icons";
 //   import { useNavigate } from "react-router-dom";
 
   
   function Footer() {
+
     // const navigate=useNavigate();
   
     return (
       <Box>
       <Box display={"flex"} width="100%">
         <Box lineHeight="2rem" width="40%" textAlign={'left'} paddingTop="5rem" paddingLeft="11%">
+
+    
+  
+    return (
+      <Box display={"flex"} width="100%">
+        <Box width="40%" textAlign={'left'} paddingTop="5rem" paddingLeft="11%">
+
            <Box>
             <Img height={"5rem"} src="https://yt3.ggpht.com/ytc/AMLnZu8mlYlpix3OpMsz3vWSQXk8z9Wv_jjqC0LZLrRRsQ=s176-c-k-c0x00ffffff-no-rj"/>
             <Text>Sign Up</Text>
             <Text>Request A Demo</Text>
             <Text>Sign in</Text>
+
             <br/>
             <HStack gap={"2rem"}>
+
+            <HStack>
+
                 <Img height={"5rem"} src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75"/>
                 <Img height={"5rem"} src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=64&q=75"/>
                 <Img height={"5rem"} src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=48&q=75"/>
@@ -56,7 +76,11 @@ import {
            </Box>
         </Box>
         <Box  width="60%" textAlign={'left'} >
+
            <Box paddingTop="3rem" display={"flex"} lineHeight="2rem">
+
+           <Box paddingTop="3rem" display={"flex"}>
+
             
             <List>
                <ListItem><Heading fontSize={"1.3rem"}>Products</Heading></ListItem>
@@ -84,7 +108,11 @@ import {
             </List>
            </Box>
           
+
            <Box lineHeight="2rem"  display={"flex"} paddingTop="5rem">
+
+           <Box  display={"flex"} paddingTop="5rem">
+
             <List>
             <ListItem > <Heading fontSize={"1.3rem"}>RESOURCES</Heading></ListItem>
             <ListItem>Marketing Blog</ListItem>
@@ -112,6 +140,7 @@ import {
             </List>
            </Box>
         </Box>
+
         
 
         
@@ -170,6 +199,8 @@ import {
           </Stack>
         </Container>
       </Box>
+
+
 
       </Box>
       

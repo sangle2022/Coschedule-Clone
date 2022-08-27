@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // {Dont change index file unless you are using redux}
 //{Inform team leader if any changes needed}
 root.render(
-  <ChakraProvider>
+    <ChakraProvider>
     <BrowserRouter>
     <Provider store={store}>
     <App />

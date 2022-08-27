@@ -33,12 +33,7 @@ import {
     FaLinkedin,
   } from "react-icons/fa";
 
-  import{
-   
-    HStack,
-    Icon
-    
-  } from "@chakra-ui/react";
+
 
 //   import {Search2Icon} from"@chakra-ui/icons";
 //   import { useNavigate } from "react-router-dom";

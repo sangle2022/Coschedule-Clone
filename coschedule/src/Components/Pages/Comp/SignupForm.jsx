@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Image, Input, Stack, Text, useToast, VStack } from '@chakra-ui/react'
+import { Box, Button, Heading, Image, Input, Stack, StyledStepper, Text, useToast, VStack } from '@chakra-ui/react'
 import React, { useReducer  } from 'react'
 import {useDispatch, useSelector} from "react-redux"
 
@@ -111,7 +111,7 @@ const SignupForm = () => {
                     }
                 placeholder='Password(minimum 8 characters)' _placeholderShown={{paddingLeft:"20px"}} onFocus={emailShadow} backgroundColor="white" outline="none"  paddingLeft="10px" />   
                
-               <Button width="100%" marginTop="20px" color="white" backgroundColor="#d17760" 
+               <Button disabled={state.password.length>=7?false:true} width="100%" marginTop="20px" color="white" backgroundColor="#d17760" 
                     _hover={{background:"#f37e5d"}}  onClick={signupHandle}
                     >Sign Up</Button>
                 <br />

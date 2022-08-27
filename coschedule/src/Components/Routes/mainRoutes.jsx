@@ -1,5 +1,7 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
+import Main from '../Pages/pricing_page/Main';
+
 
 import Calendar_home from '../Pages/Calendar/Calendar_home'
 import MarketingCalendar from '../Pages/Products/MarketingCalendar/MarketingCalendar'
@@ -19,7 +21,10 @@ const MainRoutes = () => {
       <Route path="/calendar-home" element={<Calendar_home />} />
       <Route path="/" element={<h1>Homepage</h1>} /> 
 
+      <Route path="/pricing_page" element={<Main/>} /> 
+
       <Route path="/" element={<Home />} />
+
 
     </Routes>
   )

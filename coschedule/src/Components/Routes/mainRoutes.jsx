@@ -6,7 +6,7 @@ import Company from '../Pages/Company'
 import SignIn from '../Pages/SignIn'
 import SignUp from '../Pages/SignUp'
 
-import { Route, Routes } from 'react-router-dom';
+
 import Main from '../Pages/pricing_page/Main';
 
 

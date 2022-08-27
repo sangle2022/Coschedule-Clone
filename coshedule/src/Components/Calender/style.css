@@ -1,0 +1,12 @@
+#cross{
+ 
+   cursor: pointer;
+}
+.myDIV .hide{
+    display: none;
+    }
+    .myDIV:hover .hide   {
+     display:block;
+     
+     cursor: pointer;
+    }

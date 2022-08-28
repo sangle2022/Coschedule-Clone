@@ -28,7 +28,7 @@ const CalenderNavbar = () => {
         padding={"15px 5px"}
         justifyContent="space-between"
       >
-        <Link to="/">
+        <Link to="/calendar-home">
           <Button>Home</Button>
         </Link>
 

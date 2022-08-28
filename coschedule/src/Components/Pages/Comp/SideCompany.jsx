@@ -6,7 +6,7 @@ import "./login.css"
 const SideCompany = () => {
   const navigate=useNavigate()
   const gotoCalender=()=>{
-    navigate("/calender")
+    navigate("/calendar-home")
 
   }
   return (
@@ -38,7 +38,7 @@ const SideCompany = () => {
 
 
     <Button color="white" backgroundColor="#d17760" 
-        _hover={{background:"#f37e5d"}} onClick={gotoCalender}>Take To My Calender</Button>
+        _hover={{background:"#f37e5d"}} onClick={gotoCalender}>Take To My Calendar</Button>
 
     <br />
     <br />

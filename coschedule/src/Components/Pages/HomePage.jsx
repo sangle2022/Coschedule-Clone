@@ -64,11 +64,11 @@ function Homepage() {
           <br/>
           <br/>
           <br/>
-          <Heading >Our Products</Heading>
+          <Heading id="products">Our Products</Heading>
           <br/>
           <br/>
-          <Box >
-          <Grid
+          <Box   >
+          <Grid 
               templateAreas={`
                               "kav nav "
                               "khav gav"`}

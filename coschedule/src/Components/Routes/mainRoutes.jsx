@@ -10,7 +10,7 @@ import SignUp from '../Pages/SignUp'
 import Main from '../Pages/pricing_page/Main';
 
 
-import Calendar_home from '../Pages/Calendar/Calendar_home'
+import Calendar_home from '../Pages/calendar_home/Calendar_home'
 import MarketingCalendar from '../Pages/Products/MarketingCalendar/MarketingCalendar'
 import MarketingSuite from '../Pages/Products/MarketingSuite/MarketingSuite'
 
@@ -36,8 +36,7 @@ const MainRoutes = () => {
       <Route path='/company' element={<Company/>} />
       <Route path='/calender' element={<Calender/>}/>
       <Route path='/newproject' element={<NewTask />}/>
-
-     
+       
 
 
       <Route path="/pricing_page" element={<Main/>} /> 

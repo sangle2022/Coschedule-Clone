@@ -1,0 +1,14 @@
+.checkedBox{
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color:#CCCCCC;
+            border-radius:50%;
+            vertical-align: middle;
+            border:1px solid #ddd;
+            appearance: none;
+            outline: none;
+            cursor: pointer;
+    }
+.checkedBox:checked{
+    background-color:#8AC884;
+}

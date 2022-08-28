@@ -2,12 +2,16 @@ import React from 'react'
 import {Box, Flex} from "@chakra-ui/react"
 import Mainpage from './utils/Mainpage'
 import Sidebar from './utils/Sidebar'
+import Footer from '../../Footer'
 const MarketingCalendar = () => {
     return (
-        <Flex>
+        <Box>
+            <Flex>
             <Mainpage />
             <Sidebar />
-        </Flex>
+            </Flex>
+            <Footer />
+     </Box>
   )
 }
 

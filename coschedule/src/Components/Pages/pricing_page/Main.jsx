@@ -2,6 +2,9 @@ import React from 'react';
 import  "./main.css";
 import Footer from "../Footer";
 
+import Footer from '../Footer';
+
+
 const Main = () => {
   return (
     <div>
@@ -194,8 +197,13 @@ const Main = () => {
             </div>
         </div>
         <div className='footer'>
+
             <Footer />
         </div>
+        <Footer/>
+        </div>
+        
+
     </div>
   )
 }

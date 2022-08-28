@@ -16,6 +16,8 @@ import MarketingSuite from '../Pages/Products/MarketingSuite/MarketingSuite'
 
 
 import Home from "./Home";
+import Calender from '../Calender/Calender'
+import NewTask from '../Calender/NewTask'
 
 
 const MainRoutes = () => {
@@ -32,6 +34,9 @@ const MainRoutes = () => {
       <Route path='/login' element={<SignIn />} />
       <Route path='/signup' element={<SignUp />} /> 
       <Route path='/company' element={<Company/>} />
+      <Route path='/calender' element={<Calender/>}/>
+      <Route path='/newproject' element={<NewTask />}/>
+
      
 
 

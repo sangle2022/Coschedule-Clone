@@ -3,7 +3,8 @@ import React, { useReducer  } from 'react'
 import {useDispatch, useSelector} from "react-redux"
 
 import {useNavigate} from "react-router-dom"
-import { register } from '../../Redux/AuthReducer/action'
+import { register } from '../../../Redux/AuthReducer/action'
+
 
 const initialState = {
     name: "",

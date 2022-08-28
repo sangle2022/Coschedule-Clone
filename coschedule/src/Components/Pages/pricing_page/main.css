@@ -108,7 +108,7 @@
     text-align: left;
 }
 ul li:before {
-    content: '✓';
+    /* content: '✓'; */
     color: #f37e5d;
   }
 .box>li{

@@ -37,11 +37,11 @@ function Homepage() {
               <Button color={"white"} backgroundColor={"#F37e5d"}>Get Started Free</Button>
               <Text>Why not? It's free forever.</Text>
           </Box>
-          <Box Align="center">
-              <Img src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhome-calendar.png&w=1200&q=75"/>
-          </Box>
-          <Box pad >
-              <Box Align="center">
+          <Flex justifyContent={"center"} alignItems="center">
+              <Img  src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhome-calendar.png&w=1200&q=75"/>
+          </Flex>
+          <Box  >
+              <Box >
                   <Heading>30,000 marketers start their day with CoSchedule</Heading>
                   <br/>
                   <HStack gap={"2rem"} paddingLeft={"15%"}>
@@ -64,7 +64,7 @@ function Homepage() {
           <br/>
           <br/>
           <br/>
-          <Heading Align="center">Our Products</Heading>
+          <Heading >Our Products</Heading>
           <br/>
           <br/>
           <Box >

@@ -1,8 +1,14 @@
 import { Box, Button, Heading, Input, Text } from '@chakra-ui/react'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "./login.css"
 
 const SideCompany = () => {
+  const navigate=useNavigate()
+  const gotoCalender=()=>{
+    navigate("/calender")
+
+  }
   return (
    <Box  height="100%" width="80%">
     <br />
@@ -32,7 +38,7 @@ const SideCompany = () => {
 
 
     <Button color="white" backgroundColor="#d17760" 
-        _hover={{background:"#f37e5d"}}>Take To My Calender</Button>
+        _hover={{background:"#f37e5d"}} onClick={gotoCalender}>Take To My Calender</Button>
 
     <br />
     <br />

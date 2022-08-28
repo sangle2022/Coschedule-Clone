@@ -3,6 +3,7 @@ import React from 'react'
 import NavbarCalendar from './NavbarCalendar'
 import qoute from "./quotes.png"
 import bookmark from "./bookmark.png"
+import Footer from '../../../Footer'
 const Mainpage = () => {
     return (
         <Box w="75vw" textAlign={"left"}>
@@ -211,6 +212,7 @@ const Mainpage = () => {
                     </Box>
                 </Box>
             </Box>
+           
       </Box>
   )
 }

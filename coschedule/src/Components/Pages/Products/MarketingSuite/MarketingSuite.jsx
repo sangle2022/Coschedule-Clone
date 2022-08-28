@@ -1,5 +1,6 @@
 import { AspectRatio, Avatar, Box, Flex, Heading, Image, Link, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
+import Footer from '../../Footer'
 import NavbarSuite from './utils/NavbarSuite'
 const MarketingSuite = () => {
   return (
@@ -159,6 +160,7 @@ const MarketingSuite = () => {
           <Link to="#"color={"white"} fontStyle="italic">or Get Started Free</Link>
         </Flex>
       </Flex>
+      <Footer />
     </Box>
   )
 }

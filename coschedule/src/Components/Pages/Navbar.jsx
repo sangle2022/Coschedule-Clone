@@ -30,7 +30,7 @@ function Navbar() {
         
         <Img width={"200px"} src="https://coschedule.com/img/cos-logo-full-color.svg"/>
         
-        <Text _hover={{color:"#F37e5d"}}>Products</Text>
+        <Text _hover={{color:"#F37e5d"}}><a href="#products">Products</a></Text>
         <Text _hover={{color:"#F37e5d"}}>WhyCoSchedule</Text>
         <Text _hover={{color:"#F37e5d"}}>Resourecs</Text>
         <Text _hover={{color:"#F37e5d"}}><Link to={"/pricing_page"}>Pricing</Link></Text>
@@ -39,7 +39,7 @@ function Navbar() {
        
        <Text _hover={{color:"#F37e5d"}}><Link to={"/login"}>Sign In</Link></Text>
        <Text _hover={{color:"#F37e5d"}}>Get A Demo</Text>
-       <Button color={"white"} backgroundColor={"#F37e5d"}>Create My Calendar</Button>
+       <Link to="calendar-home"><Button color={"white"} backgroundColor={"#F37e5d"}>Create My Calendar</Button></Link>
          
 
         

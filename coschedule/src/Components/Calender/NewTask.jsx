@@ -53,7 +53,7 @@ const NewTask = () => {
   return (
     <Box w="100%" h="28rem">
       <Box marginleft={"1500px"} marginTop="30px">
-        <Link to="/">
+        <Link to="/calendar-home">
           <CloseIcon />
         </Link>
       </Box>

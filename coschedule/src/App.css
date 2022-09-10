@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+#cross{
+ 
+  cursor: pointer;
+}
+.box .AddIcon{
+   display: none;
+
+   }
+   .box:hover .AddIcon   {
+    display:block;
+    
+    cursor: pointer;
+   }

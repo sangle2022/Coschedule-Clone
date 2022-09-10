@@ -10,10 +10,10 @@ import { GrFormClose } from "react-icons/gr";
 
 const DayProjects = ({ title, refNO }) => {
   const dispatch = useDispatch();
-  const { SetRef } = useContext(DayContext);
+  const { SetReference } = useContext(DayContext);
   const navigate = useNavigate();
   const handleClick = (refNO) => {
-    SetRef(refNO);
+    SetReference(refNO);
 
     dispatch(DeleteSchedule(refNO));
   };

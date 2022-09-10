@@ -30,8 +30,8 @@ const Day = ({ day, RowIndex }) => {
       className="box"
       p="11px"
       border={`${getCurrentBorder()}`}
-      w="165"
-      minH="210px"
+      w="150"
+      minH="200px"
       textAlign="start"
     >
       {RowIndex === 0 && (

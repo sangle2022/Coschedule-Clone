@@ -24,7 +24,9 @@ const Calender = () => {
         {monthCurrent.map((row, i) => (
           <SimpleGrid columns={7} key={i}>
             {row.map((day, ind) => (
-              <Day day={day} key={ind} RowIndex={i} />
+      
+               <Day day={day} key={ind} RowIndex={i} />
+
             ))}
           </SimpleGrid>
         ))}

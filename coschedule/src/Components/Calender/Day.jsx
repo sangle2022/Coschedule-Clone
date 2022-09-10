@@ -34,12 +34,12 @@ const Day = ({ day, RowIndex }) => {
       minH="200px"
       textAlign="start"
     >
-      {RowIndex === 0 && (
+      {<div>{RowIndex === 0 && (
         <Text fontSize="lg">{day.format("dddd").toUpperCase()}</Text>
-      )}
+      )}</div>}
 
       <Flex color={""} justifyContent="space-between">
-        <Text>{day.format("MMM-DD")}</Text>
+        <Text marginTop={"20px"}>{day.format("MMM-DD")}</Text>
         <Button onClick={HandleChange} bgColor={"white"}>
           <AddIcon marginRight={"0.4rem"} className="AddIcon" />
         </Button>

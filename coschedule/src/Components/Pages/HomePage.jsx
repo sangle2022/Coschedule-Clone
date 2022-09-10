@@ -29,7 +29,7 @@ function Homepage() {
 
   return (
     
-    <Box marginTop={"6rem"} >
+    <Box marginTop={"6rem"} width="100%">
       
           <Box  textAlign="center" lineHeight={"3rem"}>
               <Heading  >Organize All Of Your Marketing In <br/> One Place. From Any Place.</Heading>

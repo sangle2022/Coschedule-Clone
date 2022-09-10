@@ -15,12 +15,17 @@ export default function Sidebar() {
     
     const navigate = useNavigate();
     const toast =useToast()
-   
-    const loginHandler = () => {
-       axios.get("https://rest-api-vaibhav-clone.herokuapp.com/posts").then((r)=>{
+    
+    
+    useEffect(() => {
+      axios.get("https://rest-api-vaibhav-clone.herokuapp.com/posts").then((r)=>{
         setInfo(r.data)
        }).catch((e)=>{console.log(e)})
-
+     
+    }, []);
+   
+    const loginHandler = () => {
+      
     if(info){
     
     for(let i=0;i<info.length;i++)

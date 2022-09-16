@@ -106,8 +106,8 @@ npm start
 
 ## Contributors
 
-- [Priyanka Soni](https://github.com/pri65)
 - [Mufadal Sadriwala](https://github.com/Mufadal03)
+- [Priyanka Soni](https://github.com/pri65)
 - [Suraj Sangle](https://github.com/sangle2022)
 - [Vaibhav Sultane](https://github.com/Vaibhav2416)
 - [Saurav Barnwal](https://github.com/sauravbarnwal9) 

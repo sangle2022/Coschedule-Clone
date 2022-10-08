@@ -9,7 +9,7 @@ import { register } from '../../../Redux/AuthReducer/action'
 const initialState = {
     name: "",
     email: "",
-    password: ""
+    password:""
   };
   
 const reducer = (state, action) => {
@@ -36,28 +36,58 @@ const SignupForm = () => {
   const navigate = useNavigate();
   const toast =useToast()
 
-  
+  const symb_email="@."
 
   const signupHandle = () => {
+    let naav=state.name
+    if(naav.length==0){
+      return toast({
+        title: 'Name cannot be empty',
+        description: 'Please Enter Your Name',
+        status: 'error',
+        isClosable: true,
+        position:'top',
+      }) 
+    }
+    let funda=state.email
+    // console.log(funda)
+    // console.log(symb_email);
+    if(!funda.includes('@') || !funda.includes('.') || !funda.includes('com') ){
+      return toast({
+        title: 'Email type is incorrect',
+        description: 'Please enter right email',
+        status: 'error',
+        isClosable: true,
+        position:'top',
+      }) 
+    }
+    let pascode=state.password
+    console.log(pascode);
+    if(!((pascode.includes('!') || pascode.includes('@') || pascode.includes('&') || pascode.includes('^') || pascode.includes('*') 
+    || pascode.includes('/') || pascode.includes('?')) && (pascode.includes('1')) ) ) {
+      return toast({
+        title: 'Password must be strong',
+        description: 'Password must contain any symbol and must contain any number @,#,1,2 etc',
+        status: 'error',
+        isClosable: true,
+        position:'top',
+      }) 
+    }
     dispatch(register(state)).then((r) => {
+    console.log(r)
       toast({
         title: 'Account Created Successfully',
         description: 'Youre being redirected to login page',
         status: 'success',
-        duration: 1000,
         isClosable: true,
         position:'top',
       }) 
       setTimeout(() => {
-        navigate("/login", { replace: true })  
-      }, 4000); 
+         navigate("/login", { replace: true })  
+      }, 1000); 
     });
   };
 
-
-
-
- 
     const changeShadow=()=>{
         let change=document.getElementById('colo')
         change.style.boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
@@ -108,7 +138,7 @@ const SignupForm = () => {
                <Input id='solo' type="password" variant='unstyled' border="2px solid #E6E6E6;" 
                     height="42px" textAlign="center" value={state.password}
                     onChange={(e) =>
-                      setState({ type: "password", payload: e.target.value })
+                      setState({ type: "password", payload: e.target.value  })
                     }
                 placeholder='Password(minimum 8 characters)' _placeholderShown={{paddingLeft:"20px"}} onFocus={emailShadow} backgroundColor="white" outline="none"  paddingLeft="10px" />   
                

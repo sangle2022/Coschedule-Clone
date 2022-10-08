@@ -17,47 +17,85 @@ export default function Sidebar() {
     const toast =useToast()
     
     
-    useEffect(() => {
-      axios.get("https://rest-api-vaibhav-clone.herokuapp.com/posts").then((r)=>{
-        setInfo(r.data)
-       }).catch((e)=>{console.log(e)})
+    // useEffect(() => {
+    //   axios.get("https://thawing-plains-60298.herokuapp.com/signin").then((r)=>{
+    //     setInfo(r)
+    //    }).catch((e)=>{console.log(e)})
      
-    }, []);
+    // }, []);
    
     const loginHandler = () => {
-      
-    if(info){
-    
-    for(let i=0;i<info.length;i++)
-    {
-      
-      if(info[i].email===mail && info[i].password===pass){
-          
-      toast({
+     const email=mail
+      const password=pass
+      console.log(email)
+      console.log(password)
+
+
+      axios.post("https://thawing-plains-60298.herokuapp.com/signin",{email, password}).then((r)=>{
+        console.log(r);
+        if(r.data=="sign in successfully"){
+          // console.log("hey babay")
+          toast({
             title: 'Sign In Successfully',
             description: "Lets Plan Your Day",
             status: 'success',
-            duration: 1000,
+            duration: 800,
             isClosable: true,
             position:'top',
           }) 
-      return ( setTimeout(() => {
+       return ( setTimeout(() => {
               navigate("/company")
-            }, 3000)
+            }, 1000)
           )  
         }
+        // if closed
+      else{
+        return ( toast({
+          title: 'Oops ! Entered wrong credentials',
+          description: "Lets Try Again",
+          status: 'error',
+          duration: 800,
+          isClosable: true,
+          position:'top'
+        })
+        )
       }
-      return ( toast({
-        title: 'Oops ! Entered wrong credentials',
-        description: "Lets Try Again",
-        status: 'error',
-        duration: 1000,
-        isClosable: true,
-        position:'top'
-      })
-      )
+      }).catch((e)=>{console.log(e)})
+    
+    
+      // if(info){
+    
+    // for(let i=0;i<info.length;i++)
+    // {
+      
+    //   if(info[i].email===mail && info[i].password===pass){
+          
+      // toast({
+      //       title: 'Sign In Successfully',
+      //       description: "Lets Plan Your Day",
+      //       status: 'success',
+      //       duration: 1000,
+      //       isClosable: true,
+      //       position:'top',
+      //     }) 
+      // return ( setTimeout(() => {
+      //         navigate("/company")
+      //       }, 3000)
+      //     )  
+       
+      
+      // return ( toast({
+      //   title: 'Oops ! Entered wrong credentials',
+      //   description: "Lets Try Again",
+      //   status: 'error',
+      //   duration: 1000,
+      //   isClosable: true,
+      //   position:'top'
+      // })
+      // )
 
-    }
+    // }
+
     };
 
     const handleSign=()=>{

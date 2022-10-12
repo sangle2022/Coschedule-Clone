@@ -9,7 +9,7 @@ import axios from "axios"
 const Calendar_home = () => {
   const [username, setUsername] = useState("")
   useEffect(() => {
-    axios.get("https://rest-api-vaibhav-clone.herokuapp.com/posts")
+    axios.get("https://thawing-plains-60298.herokuapp.com/")
       .then(({data}) => {
        setUsername(data[data.length-1].name)
       })
